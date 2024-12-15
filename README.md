@@ -1,6 +1,28 @@
-# Talk to the City
+# Talk to the City With a Twist
 
-This repo is now a merged monorepo containing:
+Adding onto the work done by the AI objectives institute, this program does the following:
+Takes a PDF file (exported from the generated webpage report) as input.
+Extracts its text content.
+Performs an analysis of topics
+Uses the Anthropic API to generate follow-up questions aimed at future interviews, based on these identified topics.
+
+
+
+Requirements:
+Assumes you have installed pytesseract and have Tesseract installed on your system.
+
+
+Install instructions:
+For Tesseract:
+- On macOS (with Homebrew):
+- brew install tesseract
+
+On Ubuntu/Debian:
+- sudo apt-get install tesseract-ocr
+
+For Python binding:
+-pip install pytesseract
+
 
 ## Talk to the City Turbo
 
