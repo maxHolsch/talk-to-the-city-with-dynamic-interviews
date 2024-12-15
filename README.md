@@ -23,6 +23,22 @@ On Ubuntu/Debian:
 For Python binding:
 -pip install pytesseract
 
+## Here's what our tool does (in detail)
+
+Reads an image (screenshot of a report webpage).
+Uses Tesseract (OCR) to extract text from the image.
+Cleans and processes the text to improve the prompt for the Anthropic API.
+sends this to the Anthropic API (Claude model) using a given prompt, requesting:
+Identification of commonly discussed topics.
+Identification of less mentioned, underexplored topics.
+Generation of three sets of interview questions (deep-dive, underexplored, and connecting questions).
+returns the resulting questions in a structured JSON format of new question directions to take.
+
+future directions goals: 
+- get this directly integrated with talk to the city, such that when deployed this tool is lightning quick to use
+- Resolve bugs with more modern versions of Mac and Windows
+
+
 
 ## Talk to the City Turbo
 
